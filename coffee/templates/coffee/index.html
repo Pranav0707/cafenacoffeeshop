@@ -1,0 +1,422 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafena Coffee Shop</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'coffee/css/style.css' %}">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="{% static 'coffee/images/logo.png' %}" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Products</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+        <a href="#blogs">Blogs</a>
+    </nav>
+
+    <div class="icons">
+        
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="{% static 'coffee/images/cart-item-1.png' %}" alt="">
+            <div class="content">
+                <h3>Cappuccino</h3>
+                <div class="price">$1.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="{% static 'coffee/images/cart-item-2.png' %}" alt="">
+            <div class="content">
+                <h3>Latte</h3>
+                <div class="price">$2.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="{% static 'coffee/images/cart-item-3.png' %}" alt="">
+            <div class="content">
+                <h3>Espresso</h3>
+                <div class="price">$1.00/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="{% static 'coffee/images/cart-item-4.png' %}" alt="">
+            <div class="content">
+                <h3>Americano</h3>
+                <div class="price">$3.00/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Fresh Coffee In The Morning</h3>
+        <p>From farm to cup – come on a journey to experience 52 hand-picked specialty coffees from around the world each week.</p>
+        <!-- <a href="#" class="btn">get yours now</a> -->
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>About</span> Us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="{% static 'coffee/images/about-img.jpeg' %}" alt="">
+        </div>
+
+        <div class="content">
+            <h3>What makes our coffee special?</h3>
+            <p> We grade our coffees into different sizes and quality, throw out the lower quality beans and blind taste our grades and types individually to find the best roasting temperature that bring out the best taste for that specific size and coffee bean – different roasting temperatures for different coffee. We do this constantly to maintain a consistent and high-quality roast every time. </p>
+            
+            <!-- <a href="#" class="btn">learn more</a> -->
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> our <span>best Specialties</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{% static 'coffee/images/menu-1.png' %}" alt="">
+            <h3>Espresso</h3>
+            <div class="price">$1.99 <span>3.99</span></div>
+            <!-- <a href="#" class="btn">add to cart</a> -->
+        </div>
+
+        <div class="box">
+            <img src="{% static 'coffee/images/menu-2.png' %}" alt="">
+            <h3>Latte</h3>
+            <div class="price">$0.99 <span>2.99</span></div>
+            <!-- <a href="#" class="btn">add to cart</a> -->
+        </div>
+
+        <div class="box">
+            <img src="{% static 'coffee/images/menu-3.png' %}" alt="">
+            <h3>Americano</h3>
+            <div class="price">$1.99 <span>4.99</span></div>
+            <!-- <a href="#" class="btn">add to cart</a> -->
+        </div>
+
+        <div class="box">
+            <img src="{% static 'coffee/images/menu-4.png' %}" alt="">
+            <h3>Cappuccino</h3>
+            <div class="price">$2.99 <span>4.99</span></div>
+            <!-- <a href="#" class="btn">add to cart</a> -->
+        </div>
+
+        <div class="box">
+            <img src="{% static 'coffee/images/menu-5.png' %}" alt="">
+            <h3>Black Coffee</h3>
+            <div class="price">$1.99 <span>5.99</span></div>
+            <!-- <a href="#" class="btn">add to cart</a> -->
+        </div>
+
+        <div class="box">
+            <img src="{% static 'coffee/images/menu-6.png' %}" alt="">
+            <h3>Cortodo</h3>
+            <div class="price">$4.99 <span>8.99</span></div>
+            <!-- <a href="#" class="btn">add to cart</a> -->
+        </div>
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> Our <span>products</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="{% static 'coffee/images/product-1.png' %}" alt="">
+            </div>
+            <div class="content">
+                <h3>Nicaragua</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$15.99 <span>$20.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+        
+            <div class="image">
+                <img src="{% static 'coffee/images/product-2.png' %}" alt="">
+            </div>
+            <div class="content">
+                <h3>Columbia</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$18.99 <span>$20.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+           
+            <div class="image">
+                <img src="{% static 'coffee/images/product-3.png' %}" alt="">
+            </div>
+            <div class="content">
+                <h3>Peru Coffee</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$25.99 <span>$29.99</span></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> Customer's <span>Review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{% static 'coffee/images/quote-img.png' %}" alt="" class="quote">
+            <p>I find, in life, you generally get what you pay for - and this is no exception. It won't replace my day-to-day coffee, but it's well worth splashing out on if I fancy some caffeine based, self-indulgence and luxury. Guests who try it are always sceptical, but after tasting, unanimously agree it has a superior, bitter-free taste than the run of the mill stuff.</p>
+            <img src="{% static 'coffee/images/pic-1.png' %}" class="user" alt="">
+            <h3>John Wilson</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'coffee/images/quote-img.png' %}" alt="" class="quote">
+            <p> I ordered this coffee for special occasions, but we ended up having it almost every day. It is smooth and aromatic, going to order again!</p>
+            <img src="{% static 'coffee/images/pic-2.png' %}" class="user" alt="">
+            <h3>Alice Johnson</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="{% static 'coffee/images/quote-img.png' %}" alt="" class="quote">
+            <p>I recently purchased Nicaragua a gift for my Father, he had been wanting to try it for a long time and was so excited when he opened it. You could smell the coffee through the wrapping paper and when he tried it, he loved it. I will definitely be recommending this coffee to others and recommend they purchase from your website as the delivery and service was brilliant. Many thanks.</p>
+            <img src="{% static 'coffee/images/pic-3.png' %}" class="user" alt="">
+            <h3>Kopi luwak</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <div class="row">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1629452077891!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="Name" name="name" required>
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="Email" name='email' required>
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="Number" name="number" required>
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="textarea" placeholder="Message" name="message" required>
+            </div>
+            <input type="submit" value="contact now" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="{% static 'coffee/images/blog-1.jpeg' %}" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Learn How To Brew Coffee</a>
+                <span>By Bean Ground / 1st July, 2021</span>
+                <p>After working in coffee shops throughout the United Kingdom and the United Arab Emirates, Mark at Bean Ground now finds himself testing and experimenting with coffee in his own home. Learn how to brew coffee in the comfort of your own home by following along with a plethora of brew guides. Learn about the best equipment for you with the easy-to-follow product reviews available. All in all, this is our favorite coffee blog of 2021.</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{% static 'coffee/images/blog-2.jpeg' %}" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Manual Coffee Brewing</a>
+                <span>By John / 1st April, 2021</span>
+                <p>Outside of the 9-5 life, John at Manual Coffee Brewing enjoys roasting coffee at home and sharing his experiments with his followers. Learn about different techniques of home brewing, including pour-over and immersion. Manual coffee brewing is great if you are branching out into a home brewing hobby. Make sure to read product reviews and learn about John’s tastes through his coffee shop reviews.</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="{% static 'coffee/images/blog-3.jpeg' %}" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Tasty and Refreshing Coffee</a>
+                <span>By admin / 21st may, 2021</span>
+                <p>Traveling from cafe to cafe, Resi is waiting as that next cup of coffee is being prepared, ready to delve into an analysis of what is on offer. Resi has an extensive list of coffee shop reviews nicely categorized by continent, country, and city (also conveniently presented on a map) on her blog The Way to Coffee. The blog is good for travelers who want to discover new places and start the day off with a great cup of coffee. If you loved that cup of coffee you just consumed, look up her guides on roasting and brewing so you can make it exactly the same at home.</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="footer">
+
+
+    <div class="links">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+    </div>
+
+    <div class="credit">Created By <span>Pranav Tanaji Khot</span> | all rights reserved</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="{% static 'coffee/js/script.js' %}"></script>
+
+</body>
+</html>
